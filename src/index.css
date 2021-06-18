@@ -1,0 +1,14 @@
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:clicked{
+  color: black;
+}
+*{
+  margin: 0;
+  font-family: "monospace";
+  padding: 0;
+  box-sizing: border-box;
+}
