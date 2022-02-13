@@ -1,12 +1,12 @@
 
-export const BASE_URL = process.env.BASE_URL || 'http://localhost:3000';
+export const BASE_URL = import.meta.env.VITE_BASE_URL
 import axios, { AxiosInstance } from "axios";
 
 class APIService {
   axiosFunction: AxiosInstance;
 
   constructor(token?: boolean) {
-    this.axiosFunction = axios.create({ baseURL: BASE_URL });
+    this.axiosFunction = axios.create({ baseURL: BASE_URL })
     if (token) {
       this.setToken();
     }
